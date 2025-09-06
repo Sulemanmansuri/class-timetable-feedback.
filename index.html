@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Timetable & Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📘 My Class Timetable</h1>
+  </header>
+
+  <!-- Timetable Section -->
+  <section class="timetable">
+    <h2>Weekly Timetable</h2>
+    <table>
+      <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+      <tr>
+        <td>9:00 - 10:00</td>
+        <td>Math</td>
+        <td>Science</td>
+        <td>English</td>
+        <td>History</td>
+        <td>Math</td>
+      </tr>
+      <tr>
+        <td>10:00 - 11:00</td>
+        <td>English</td>
+        <td>Math</td>
+        <td>Geography</td>
+        <td>Science</td>
+        <td>Computer</td>
+      </tr>
+      <tr>
+        <td>11:00 - 12:00</td>
+        <td>Science</td>
+        <td>History</td>
+        <td>Math</td>
+        <td>English</td>
+        <td>Sports</td>
+      </tr>
+      <tr class="break">
+        <td colspan="6">🍴 Break (12:45 - 1:20)</td>
+      </tr>
+      <tr>
+        <td>1:20 - 2:00</td>
+        <td>Computer</td>
+        <td>Sports</td>
+        <td>English</td>
+        <td>Geography</td>
+        <td>Math</td>
+      </tr>
+      <tr>
+        <td>2:00 - 3:00</td>
+        <td>Math</td>
+        <td>English</td>
+        <td>Science</td>
+        <td>History</td>
+        <td>Library</td>
+      </tr>
+      <tr class="break">
+        <td colspan="6">☕ Short Break (3:00 - 3:15)</td>
+      </tr>
+      <tr>
+        <td>3:15 - 4:00</td>
+        <td>Drawing</td>
+        <td>Computer</td>
+        <td>Sports</td>
+        <td>Math</td>
+        <td>English</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Feedback Form Section -->
+  <section class="feedback">
+    <h2>Student Feedback Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label>How was today’s class?</label>
+      <input type="radio" name="experience" value="good"> Good
+      <input type="radio" name="experience" value="average"> Average
+      <input type="radio" name="experience" value="poor"> Poor
+
+      <label for="subjects">Favorite Subject:</label>
+      <select id="subjects">
+        <option>Math</option>
+        <option>Science</option>
+        <option>English</option>
+        <option>History</option>
+        <option>Computer</option>
+      </select>
+
+      <label>What did you like today?</label>
+      <input type="checkbox" value="teacher"> Teacher  
+      <input type="checkbox" value="topics"> Topics  
+      <input type="checkbox" value="activities"> Activities  
+
+      <label for="message">Additional Feedback:</label>
+      <textarea id="message" rows="4" placeholder="Write your feedback here..."></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 My School Project | Designed by Me</p>
+  </footer>
+</body>
+</html>
